@@ -35,8 +35,6 @@ function drawSet(){
     // chrome.declarativeNetRequest.getDynamicRules((res)=>{console.log(res)})
 }
 function addSet(key,value){
-    if(!('.' in [key]))
-        key+='.os';
     value = value.replaceAll(/(https?:\/\/|\/$)/g,'')
     list=list.concat(new shortcut(key,value))
     chrome.storage.sync.set({"shortcut":list})
