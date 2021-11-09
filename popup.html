@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prototype{
+            display:none;
+        }
+        .set {
+            display: flex;
+            justify-content: center;
+        }
+        .set .middle{
+            margin:0 12px;
+        }
+        .buttonContainer{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="prototype">
+        <div class="set">
+            <div class="key"></div>
+            <div class="middle">:</div>
+            <div class="value"></div>
+            <br>
+            <button class="delete">delete</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="list">
+        </div>
+        <div class="form">
+            <div class="set">
+                <div class="key"><input type="text"></div>
+                <div class="middle">:</div>
+                <div class="value"><input type="text"></div>
+            </div>
+            <br>
+            <div class="buttonContainer">
+                <button class="append">append</button>
+                <button class="truncate">truncate</button>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js" type="module"></script>
+</body>
+</html>
