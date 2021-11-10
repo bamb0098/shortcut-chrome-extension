@@ -1,26 +1,31 @@
 {
-  "name": "shortcut",
-  "action": {
-    "default_popup":"popup.html"
-  },
-  "manifest_version": 3,
-  "version": "0.1",
-  "description": "long in short",
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "storage",
-    "declarativeNetRequest"
-  ],
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
-  "declarative_net_request" : {
-    "rule_resources" : [{
-      "id": "ruleset_1",
-      "enabled": true,
-      "path": "rules.json"
-    }]
-  }
+    "name": "shortcut",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 3,
+    "version": "0.1",
+    "description": "long in short",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "declarativeNetRequest"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "rules.json"
+        }]
+    },
+    "search_provider": {
+        "name": "No Search",
+        "search_url": "http://{searchTerms}",
+        "keyword": "null",
+        "is_default": true
+    }
 }
