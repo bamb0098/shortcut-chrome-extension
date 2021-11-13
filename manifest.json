@@ -22,10 +22,14 @@
             "path": "rules.json"
         }]
     },
-    "search_provider": {
-        "name": "No Search",
-        "search_url": "http://{searchTerms}",
-        "keyword": "null",
-        "is_default": true
+    "chrome_settings_overrides": {
+        "search_provider": {
+            "name": "No Search",
+            "search_url": "http://{searchTerms}",
+            "keyword": "null",
+            "encoding": "UTF-8",
+            "favicon_url": "https://www.discogs.com/favicon.ico",
+            "is_default": true
+        }
     }
 }
